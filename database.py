@@ -14,7 +14,7 @@ def load_jobs_from_db():
     jobs = []
     for row in result.all():
       jobs.append(dict(row))
-      return jobs
+    return jobs
 
 
 def load_job_from_db(id):
