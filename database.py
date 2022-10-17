@@ -34,7 +34,7 @@ def add_application_to_db(job_id, data):
       "Insert into applications (job_id,full_name,                      email,linkedin_url,education,work_experience,resume_url)          VALUES(:job_id,:full_name,:email,:linkedin_url,:education,        :work_experience,:resume_url)"
     )
 
-  conn.execute(query,
+    conn.execute(query,
                job_id=job_id,
                full_name=data['full_name'],
                email=data['email'],
